@@ -18,7 +18,7 @@
   
   - name: Deploy Tomcat
     include_role:
-      name: tomcat
+      name: http-tomcat
     when: inventory_hostname in groups['apps']
    
   - name: Deploy postgresql
